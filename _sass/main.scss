@@ -8,6 +8,8 @@ table.audio-table {
     max-width: 10rem;
 
     @include large {
+      display: block;
+      width: 100%;
       max-width: 100%;
     }
   }
@@ -18,7 +20,12 @@ table.audio-table {
     font-size: 85%;
   }
 
+  @include large {
+    table-layout: fixed;
+  }
+
   @media screen and (max-width: #{$large-breakpoint}) {
+    display: block;
     max-height: 90vh;
     overflow-y: auto;
   }
