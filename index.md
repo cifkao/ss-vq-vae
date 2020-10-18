@@ -53,3 +53,19 @@ description: Site under construction
   {% endfor %}
 </tbody>
 </table>
+
+
+<script>
+var playingAudio = null;
+
+window.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('audio').forEach(function (element) {
+    element.addEventListener('play', function() {
+      if (playingAudio != null && !playingAudio.paused) {
+        playingAudio.pause();
+      }
+      playingAudio = element;
+    });
+  });
+});
+</script>
