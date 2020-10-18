@@ -1,4 +1,6 @@
 ---
+title: Hello world
+description: Site under construction
 ---
 ## Artificial inputs
 
