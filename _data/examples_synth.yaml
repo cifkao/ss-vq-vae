@@ -1,0 +1,109 @@
+body:
+- - audio_url: content/0d6e408c76f995349f6fba3b04896352.content.mp3
+    label: Tinkle Bell
+  - audio_url: style/0d6e408c76f995349f6fba3b04896352.style.mp3
+    label: Voice Oohs
+  - audio_url: target/0d6e408c76f995349f6fba3b04896352.target.mp3
+    label: Voice Oohs
+  - audio_url: vq-vae/037.mp3
+  - audio_url: driedger/00037.mp3
+  - audio_url: ulyanov/037.mp3
+  - audio_url: ulyanov_sw100/037.mp3
+- - audio_url: content/526a94f5ac242d49330c51157dd7b220.content.mp3
+    label: Flute
+  - audio_url: style/526a94f5ac242d49330c51157dd7b220.style.mp3
+    label: Tremolo Strings
+  - audio_url: target/526a94f5ac242d49330c51157dd7b220.target.mp3
+    label: Tremolo Strings
+  - audio_url: vq-vae/235.mp3
+  - audio_url: driedger/00235.mp3
+  - audio_url: ulyanov/235.mp3
+  - audio_url: ulyanov_sw100/235.mp3
+- - audio_url: content/1a124fc2c880231448d615773c920006.content.mp3
+    label: Church Organ
+  - audio_url: style/1a124fc2c880231448d615773c920006.style.mp3
+    label: Banjo
+  - audio_url: target/1a124fc2c880231448d615773c920006.target.mp3
+    label: Banjo
+  - audio_url: vq-vae/072.mp3
+  - audio_url: driedger/00072.mp3
+  - audio_url: ulyanov/072.mp3
+  - audio_url: ulyanov_sw100/072.mp3
+- - audio_url: content/feb3c8d731b81c42838539ce1e91c694.content.mp3
+    label: Electric Bass (pick)
+  - audio_url: style/feb3c8d731b81c42838539ce1e91c694.style.mp3
+    label: Electric Guitar (clean)
+  - audio_url: target/feb3c8d731b81c42838539ce1e91c694.target.mp3
+    label: Electric Guitar (clean)
+  - audio_url: vq-vae/715.mp3
+  - audio_url: driedger/00715.mp3
+  - audio_url: ulyanov/715.mp3
+  - audio_url: ulyanov_sw100/715.mp3
+- - audio_url: content/e5a63943ced2cdbbb80f8cd170af2a54.content.mp3
+    label: Honky-tonk Piano
+  - audio_url: style/e5a63943ced2cdbbb80f8cd170af2a54.style.mp3
+    label: Synth Brass 1
+  - audio_url: target/e5a63943ced2cdbbb80f8cd170af2a54.target.mp3
+    label: Synth Brass 1
+  - audio_url: vq-vae/645.mp3
+  - audio_url: driedger/00645.mp3
+  - audio_url: ulyanov/645.mp3
+  - audio_url: ulyanov_sw100/645.mp3
+- - audio_url: content/3421e7046ae205c8b4a165c6365651d6.content.mp3
+    label: Lead 1 (square)
+  - audio_url: style/3421e7046ae205c8b4a165c6365651d6.style.mp3
+    label: Electric Guitar (jazz)
+  - audio_url: target/3421e7046ae205c8b4a165c6365651d6.target.mp3
+    label: Electric Guitar (jazz)
+  - audio_url: vq-vae/144.mp3
+  - audio_url: driedger/00144.mp3
+  - audio_url: ulyanov/144.mp3
+  - audio_url: ulyanov_sw100/144.mp3
+- - audio_url: content/2e0b6e975ae90e6396b04bb78c0650c4.content.mp3
+    label: Vibraphone
+  - audio_url: style/2e0b6e975ae90e6396b04bb78c0650c4.style.mp3
+    label: Alto Sax
+  - audio_url: target/2e0b6e975ae90e6396b04bb78c0650c4.target.mp3
+    label: Alto Sax
+  - audio_url: vq-vae/129.mp3
+  - audio_url: driedger/00129.mp3
+  - audio_url: ulyanov/129.mp3
+  - audio_url: ulyanov_sw100/129.mp3
+- - audio_url: content/ce58f18fe04b650d3422497a9b9faf2c.content.mp3
+    label: Acoustic Bass
+  - audio_url: style/ce58f18fe04b650d3422497a9b9faf2c.style.mp3
+    label: Harpsichord
+  - audio_url: target/ce58f18fe04b650d3422497a9b9faf2c.target.mp3
+    label: Harpsichord
+  - audio_url: vq-vae/583.mp3
+  - audio_url: driedger/00583.mp3
+  - audio_url: ulyanov/583.mp3
+  - audio_url: ulyanov_sw100/583.mp3
+- - audio_url: content/ae4b4399bbdcbbfa114bb64f48cf0962.content.mp3
+    label: Xylophone
+  - audio_url: style/ae4b4399bbdcbbfa114bb64f48cf0962.style.mp3
+    label: Banjo
+  - audio_url: target/ae4b4399bbdcbbfa114bb64f48cf0962.target.mp3
+    label: Banjo
+  - audio_url: vq-vae/508.mp3
+  - audio_url: driedger/00508.mp3
+  - audio_url: ulyanov/508.mp3
+  - audio_url: ulyanov_sw100/508.mp3
+- - audio_url: content/8d79f19eaba918bbdaeb0eae2753f3f1.content.mp3
+    label: Glockenspiel
+  - audio_url: style/8d79f19eaba918bbdaeb0eae2753f3f1.style.mp3
+    label: Pad 3 (polysynth)
+  - audio_url: target/8d79f19eaba918bbdaeb0eae2753f3f1.target.mp3
+    label: Pad 3 (polysynth)
+  - audio_url: vq-vae/390.mp3
+  - audio_url: driedger/00390.mp3
+  - audio_url: ulyanov/390.mp3
+  - audio_url: ulyanov_sw100/390.mp3
+header:
+- Content input
+- Style input
+- Target
+- VQ-VAE (ours)
+- Driedger
+- Ulyanov (tuned)
+- Ulyanov (w=10)

@@ -2,3 +2,9 @@ theme: jekyll-theme-cayman
 
 github:
   is_project_page: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://tsilinuxb107.enst.fr:4000/" />
+<meta property="og:url" content="http://tsilinuxb107.enst.fr:4000/" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"http://tsilinuxb107.enst.fr:4000/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1 class="project-name"></h1>
+      <h2 class="project-tagline"></h2>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h2 id="artificial-inputs">Artificial inputs</h2>
+
+<table class="audio-table">
+<thead>
+  <tr>
+    
+    <th>Content input</th>
+    
+    <th>Style input</th>
+    
+    <th>Target</th>
+    
+    <th>VQ-VAE (ours)</th>
+    
+    <th>Driedger</th>
+    
+    <th>Ulyanov (tuned)</th>
+    
+    <th>Ulyanov (w=10)</th>
+    
+  </tr>
+</thead>
+<tbody>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/content/0d6e408c76f995349f6fba3b04896352.content.mp3" controls=""></audio>
+			
+				<span class="audio-label">Tinkle Bell</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/style/0d6e408c76f995349f6fba3b04896352.style.mp3" controls=""></audio>
+			
+				<span class="audio-label">Voice Oohs</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/target/0d6e408c76f995349f6fba3b04896352.target.mp3" controls=""></audio>
+			
+				<span class="audio-label">Voice Oohs</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/vq-vae/037.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/driedger/00037.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov/037.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov_sw100/037.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/content/526a94f5ac242d49330c51157dd7b220.content.mp3" controls=""></audio>
+			
+				<span class="audio-label">Flute</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/style/526a94f5ac242d49330c51157dd7b220.style.mp3" controls=""></audio>
+			
+				<span class="audio-label">Tremolo Strings</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/target/526a94f5ac242d49330c51157dd7b220.target.mp3" controls=""></audio>
+			
+				<span class="audio-label">Tremolo Strings</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/vq-vae/235.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/driedger/00235.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov/235.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov_sw100/235.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/content/1a124fc2c880231448d615773c920006.content.mp3" controls=""></audio>
+			
+				<span class="audio-label">Church Organ</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/style/1a124fc2c880231448d615773c920006.style.mp3" controls=""></audio>
+			
+				<span class="audio-label">Banjo</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/target/1a124fc2c880231448d615773c920006.target.mp3" controls=""></audio>
+			
+				<span class="audio-label">Banjo</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/vq-vae/072.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/driedger/00072.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov/072.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov_sw100/072.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/content/feb3c8d731b81c42838539ce1e91c694.content.mp3" controls=""></audio>
+			
+				<span class="audio-label">Electric Bass (pick)</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/style/feb3c8d731b81c42838539ce1e91c694.style.mp3" controls=""></audio>
+			
+				<span class="audio-label">Electric Guitar (clean)</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/target/feb3c8d731b81c42838539ce1e91c694.target.mp3" controls=""></audio>
+			
+				<span class="audio-label">Electric Guitar (clean)</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/vq-vae/715.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/driedger/00715.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov/715.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov_sw100/715.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/content/e5a63943ced2cdbbb80f8cd170af2a54.content.mp3" controls=""></audio>
+			
+				<span class="audio-label">Honky-tonk Piano</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/style/e5a63943ced2cdbbb80f8cd170af2a54.style.mp3" controls=""></audio>
+			
+				<span class="audio-label">Synth Brass 1</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/target/e5a63943ced2cdbbb80f8cd170af2a54.target.mp3" controls=""></audio>
+			
+				<span class="audio-label">Synth Brass 1</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/vq-vae/645.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/driedger/00645.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov/645.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov_sw100/645.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/content/3421e7046ae205c8b4a165c6365651d6.content.mp3" controls=""></audio>
+			
+				<span class="audio-label">Lead 1 (square)</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/style/3421e7046ae205c8b4a165c6365651d6.style.mp3" controls=""></audio>
+			
+				<span class="audio-label">Electric Guitar (jazz)</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/target/3421e7046ae205c8b4a165c6365651d6.target.mp3" controls=""></audio>
+			
+				<span class="audio-label">Electric Guitar (jazz)</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/vq-vae/144.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/driedger/00144.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov/144.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov_sw100/144.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/content/2e0b6e975ae90e6396b04bb78c0650c4.content.mp3" controls=""></audio>
+			
+				<span class="audio-label">Vibraphone</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/style/2e0b6e975ae90e6396b04bb78c0650c4.style.mp3" controls=""></audio>
+			
+				<span class="audio-label">Alto Sax</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/target/2e0b6e975ae90e6396b04bb78c0650c4.target.mp3" controls=""></audio>
+			
+				<span class="audio-label">Alto Sax</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/vq-vae/129.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/driedger/00129.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov/129.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov_sw100/129.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/content/ce58f18fe04b650d3422497a9b9faf2c.content.mp3" controls=""></audio>
+			
+				<span class="audio-label">Acoustic Bass</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/style/ce58f18fe04b650d3422497a9b9faf2c.style.mp3" controls=""></audio>
+			
+				<span class="audio-label">Harpsichord</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/target/ce58f18fe04b650d3422497a9b9faf2c.target.mp3" controls=""></audio>
+			
+				<span class="audio-label">Harpsichord</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/vq-vae/583.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/driedger/00583.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov/583.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov_sw100/583.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/content/ae4b4399bbdcbbfa114bb64f48cf0962.content.mp3" controls=""></audio>
+			
+				<span class="audio-label">Xylophone</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/style/ae4b4399bbdcbbfa114bb64f48cf0962.style.mp3" controls=""></audio>
+			
+				<span class="audio-label">Banjo</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/target/ae4b4399bbdcbbfa114bb64f48cf0962.target.mp3" controls=""></audio>
+			
+				<span class="audio-label">Banjo</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/vq-vae/508.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/driedger/00508.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov/508.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov_sw100/508.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/content/8d79f19eaba918bbdaeb0eae2753f3f1.content.mp3" controls=""></audio>
+			
+				<span class="audio-label">Glockenspiel</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/style/8d79f19eaba918bbdaeb0eae2753f3f1.style.mp3" controls=""></audio>
+			
+				<span class="audio-label">Pad 3 (polysynth)</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/target/8d79f19eaba918bbdaeb0eae2753f3f1.target.mp3" controls=""></audio>
+			
+				<span class="audio-label">Pad 3 (polysynth)</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/vq-vae/390.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/driedger/00390.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov/390.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/ulyanov_sw100/390.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+</tbody>
+</table>
+
+<h2 id="real-inputs">Real inputs</h2>
+
+<table class="audio-table">
+<thead>
+  <tr>
+    
+    <th>Content input</th>
+    
+    <th>Style input</th>
+    
+    <th>VQ-VAE (ours)</th>
+    
+    <th>Driedger</th>
+    
+    <th>Ulyanov (tuned)</th>
+    
+    <th>Ulyanov (w=10)</th>
+    
+  </tr>
+</thead>
+<tbody>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/content/MR0902_JamesElder_MR0902_JamesElder_Full_13_SynthFX1.163.mp3" controls=""></audio>
+			
+				<span class="audio-label">Synth Fx</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/style/Fergessen_TheWind_Fergessen_TheWind_Full_17_SlecGtr3a_Close.146.mp3" controls=""></audio>
+			
+				<span class="audio-label">Slec Gtr A Close</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/vq-vae/684.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/driedger/00684.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (tuned)/684.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (w=10)/684.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/content/Fergessen_NosPalpitants_Fergessen_NosPalpitants_Full_17_ElecGtr1a_Close.137.mp3" controls=""></audio>
+			
+				<span class="audio-label">Elec Gtr A Close</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/style/MR1101_JohnnyLokke_MR1101_JohnnyLokke_Full_14_ElecGtr2.014.mp3" controls=""></audio>
+			
+				<span class="audio-label">Elec Gtr</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/vq-vae/559.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/driedger/00559.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (tuned)/559.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (w=10)/559.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/content/Skelpolu_TogetherAlone_Skelpolu_TogetherAlone_Full_13_Synth.0190.mp3" controls=""></audio>
+			
+				<span class="audio-label">Synth</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/style/MaurizioPagnuttiSextet_AllTheGinIsGone_MaurizioPagnuttiSextet_AllTheGinIsGone_Full_12_PianoMics1.08.mp3" controls=""></audio>
+			
+				<span class="audio-label">Piano Mics</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/vq-vae/629.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/driedger/00629.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (tuned)/629.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (w=10)/629.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/content/Zwiepack_Air_Zwiepack_Air_Full_01_MainPair_DominantArray.172.mp3" controls=""></audio>
+			
+				<span class="audio-label">Main Pair Dominant Array</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/style/MR1210_JamesMay_MR1210_JamesMay_Full_10_Mandolin2.0047.mp3" controls=""></audio>
+			
+				<span class="audio-label">Mandolin</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/vq-vae/192.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/driedger/00192.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (tuned)/192.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (w=10)/192.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/content/AndrewCole_DeadRoses_AC GUITAR-DI-SSL DUALITY.0091.mp3" controls=""></audio>
+			
+				<span class="audio-label">Ac Guitar Di Ssl Duality</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/style/LeftoverSalmon_RiversRisin_LS_RiversRisin_Full Session_AC GUITAR-M60-GRACE.0202.mp3" controls=""></audio>
+			
+				<span class="audio-label">Ac Guitar M Grace</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/vq-vae/359.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/driedger/00359.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (tuned)/359.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (w=10)/359.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/content/Turbosauro_Magilla_Turbosauro_Magilla_Full_15_ElecGtr1DTAmp.095.mp3" controls=""></audio>
+			
+				<span class="audio-label">Elec Gtr Dtamp</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/style/NickiBluhmAndTheGramblers_GoGoGo_NBATG - Bass Guitar DI.0028.mp3" controls=""></audio>
+			
+				<span class="audio-label">Nbatg Bass Guitar Di</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/vq-vae/009.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/driedger/00009.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (tuned)/009.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (w=10)/009.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/content/AngeloBoltini_ThisTown_AngeloBoltini_ThisTown_Full_46_Strings_SectionMic_VlnI.188.mp3" controls=""></audio>
+			
+				<span class="audio-label">Strings Section Mic Vln I</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/style/APZX_Transcention_APZX_Transcention_Full_14_SynthArp1.130.mp3" controls=""></audio>
+			
+				<span class="audio-label">Synth Arp</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/vq-vae/277.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/driedger/00277.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (tuned)/277.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (w=10)/277.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/content/LindyHipBigBand_TheOpener_LindyHipBigBand_TheOpener_Full_11_SaxAlto01.0143.mp3" controls=""></audio>
+			
+				<span class="audio-label">Sax Alto</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/style/TheTravellingBand_Quicksand_TheTravellingBand_Quicksand_Full_17_ElecGtr2Close.145.mp3" controls=""></audio>
+			
+				<span class="audio-label">Elec Gtr Close</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/vq-vae/599.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/driedger/00599.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (tuned)/599.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (w=10)/599.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/content/MattSzlachetka_HeartOfMyHomeTown_MattSzlachetka_HeartOfMyHomeTown_Full_Bass-Amp-AK47.0027.mp3" controls=""></audio>
+			
+				<span class="audio-label">Bass Amp Ak</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/style/TheWesternDen_LikeYouDo_The Western Den_Like You Do_Keys-Active DI.0093.mp3" controls=""></audio>
+			
+				<span class="audio-label">Keys Active Di</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/vq-vae/070.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/driedger/00070.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (tuned)/070.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (w=10)/070.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+  <tr>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/content/Diesel13_ColourMeRed_Diesel13_ColourMeRed_Full_30_RhodesDI.0132.mp3" controls=""></audio>
+			
+				<span class="audio-label">Rhodes Di</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/style/MR0908_AlJames_MR0908_AlJames_Full_28_ElecGtr3MIDI.031.mp3" controls=""></audio>
+			
+				<span class="audio-label">Elec Gtr Midi</span>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/vq-vae/472.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/driedger/00472.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (tuned)/472.mp3" controls=""></audio>
+			
+		</td>
+    
+    <td>
+			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real/ulyanov (w=10)/472.mp3" controls=""></audio>
+			
+		</td>
+    
+  </tr>
+  
+</tbody>
+</table>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

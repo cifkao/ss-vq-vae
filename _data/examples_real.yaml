@@ -1,0 +1,89 @@
+body:
+- - audio_url: content/MR0902_JamesElder_MR0902_JamesElder_Full_13_SynthFX1.163.mp3
+    label: Synth Fx
+  - audio_url: style/Fergessen_TheWind_Fergessen_TheWind_Full_17_SlecGtr3a_Close.146.mp3
+    label: Slec Gtr A Close
+  - audio_url: vq-vae/684.mp3
+  - audio_url: driedger/00684.mp3
+  - audio_url: ulyanov (tuned)/684.mp3
+  - audio_url: ulyanov (w=10)/684.mp3
+- - audio_url: content/Fergessen_NosPalpitants_Fergessen_NosPalpitants_Full_17_ElecGtr1a_Close.137.mp3
+    label: Elec Gtr A Close
+  - audio_url: style/MR1101_JohnnyLokke_MR1101_JohnnyLokke_Full_14_ElecGtr2.014.mp3
+    label: Elec Gtr
+  - audio_url: vq-vae/559.mp3
+  - audio_url: driedger/00559.mp3
+  - audio_url: ulyanov (tuned)/559.mp3
+  - audio_url: ulyanov (w=10)/559.mp3
+- - audio_url: content/Skelpolu_TogetherAlone_Skelpolu_TogetherAlone_Full_13_Synth.0190.mp3
+    label: Synth
+  - audio_url: style/MaurizioPagnuttiSextet_AllTheGinIsGone_MaurizioPagnuttiSextet_AllTheGinIsGone_Full_12_PianoMics1.08.mp3
+    label: Piano Mics
+  - audio_url: vq-vae/629.mp3
+  - audio_url: driedger/00629.mp3
+  - audio_url: ulyanov (tuned)/629.mp3
+  - audio_url: ulyanov (w=10)/629.mp3
+- - audio_url: content/Zwiepack_Air_Zwiepack_Air_Full_01_MainPair_DominantArray.172.mp3
+    label: Main Pair Dominant Array
+  - audio_url: style/MR1210_JamesMay_MR1210_JamesMay_Full_10_Mandolin2.0047.mp3
+    label: Mandolin
+  - audio_url: vq-vae/192.mp3
+  - audio_url: driedger/00192.mp3
+  - audio_url: ulyanov (tuned)/192.mp3
+  - audio_url: ulyanov (w=10)/192.mp3
+- - audio_url: content/AndrewCole_DeadRoses_AC GUITAR-DI-SSL DUALITY.0091.mp3
+    label: Ac Guitar Di Ssl Duality
+  - audio_url: style/LeftoverSalmon_RiversRisin_LS_RiversRisin_Full Session_AC GUITAR-M60-GRACE.0202.mp3
+    label: Ac Guitar M Grace
+  - audio_url: vq-vae/359.mp3
+  - audio_url: driedger/00359.mp3
+  - audio_url: ulyanov (tuned)/359.mp3
+  - audio_url: ulyanov (w=10)/359.mp3
+- - audio_url: content/Turbosauro_Magilla_Turbosauro_Magilla_Full_15_ElecGtr1DTAmp.095.mp3
+    label: Elec Gtr Dtamp
+  - audio_url: style/NickiBluhmAndTheGramblers_GoGoGo_NBATG - Bass Guitar DI.0028.mp3
+    label: Nbatg Bass Guitar Di
+  - audio_url: vq-vae/009.mp3
+  - audio_url: driedger/00009.mp3
+  - audio_url: ulyanov (tuned)/009.mp3
+  - audio_url: ulyanov (w=10)/009.mp3
+- - audio_url: content/AngeloBoltini_ThisTown_AngeloBoltini_ThisTown_Full_46_Strings_SectionMic_VlnI.188.mp3
+    label: Strings Section Mic Vln I
+  - audio_url: style/APZX_Transcention_APZX_Transcention_Full_14_SynthArp1.130.mp3
+    label: Synth Arp
+  - audio_url: vq-vae/277.mp3
+  - audio_url: driedger/00277.mp3
+  - audio_url: ulyanov (tuned)/277.mp3
+  - audio_url: ulyanov (w=10)/277.mp3
+- - audio_url: content/LindyHipBigBand_TheOpener_LindyHipBigBand_TheOpener_Full_11_SaxAlto01.0143.mp3
+    label: Sax Alto
+  - audio_url: style/TheTravellingBand_Quicksand_TheTravellingBand_Quicksand_Full_17_ElecGtr2Close.145.mp3
+    label: Elec Gtr Close
+  - audio_url: vq-vae/599.mp3
+  - audio_url: driedger/00599.mp3
+  - audio_url: ulyanov (tuned)/599.mp3
+  - audio_url: ulyanov (w=10)/599.mp3
+- - audio_url: content/MattSzlachetka_HeartOfMyHomeTown_MattSzlachetka_HeartOfMyHomeTown_Full_Bass-Amp-AK47.0027.mp3
+    label: Bass Amp Ak
+  - audio_url: style/TheWesternDen_LikeYouDo_The Western Den_Like You Do_Keys-Active
+      DI.0093.mp3
+    label: Keys Active Di
+  - audio_url: vq-vae/070.mp3
+  - audio_url: driedger/00070.mp3
+  - audio_url: ulyanov (tuned)/070.mp3
+  - audio_url: ulyanov (w=10)/070.mp3
+- - audio_url: content/Diesel13_ColourMeRed_Diesel13_ColourMeRed_Full_30_RhodesDI.0132.mp3
+    label: Rhodes Di
+  - audio_url: style/MR0908_AlJames_MR0908_AlJames_Full_28_ElecGtr3MIDI.031.mp3
+    label: Elec Gtr Midi
+  - audio_url: vq-vae/472.mp3
+  - audio_url: driedger/00472.mp3
+  - audio_url: ulyanov (tuned)/472.mp3
+  - audio_url: ulyanov (w=10)/472.mp3
+header:
+- Content input
+- Style input
+- VQ-VAE (ours)
+- Driedger
+- Ulyanov (tuned)
+- Ulyanov (w=10)

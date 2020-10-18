@@ -1,0 +1,26 @@
+table.audio-table {
+  td {
+    vertical-align: top;
+  }
+
+  audio {
+    height: 2.5rem;
+    max-width: 10rem;
+
+    @include large {
+      max-width: 100%;
+    }
+  }
+
+  .audio-label {
+    display: block;
+    text-align: center;
+    font-size: 85%;
+  }
+
+  @media screen and (max-width: #{$large-breakpoint}) {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+}
