@@ -104,6 +104,6 @@ header:
 - Style input
 - Target
 - VQ-VAE (ours)
-- Driedger
-- Ulyanov (tuned)
-- Ulyanov (w=10)
+- Musaicing
+- U+L (tuned)
+- U+L (w=10)
