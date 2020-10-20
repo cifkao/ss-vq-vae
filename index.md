@@ -90,5 +90,5 @@ To obtain a balanced distribution of instruments, we limit the total number of e
 
 ### Timbre dissimilarity metric
 The metric uses a sequence of MFCC vectors (using only coefficients 2–13) as input and is trained using the triplet loss.
-The training dataset consists of 7381 triplets (anchor, positive, negative) are extracted from the [Mixing Secrets](https://www.cambridge-mt.com/ms/mtk/)
+The training dataset consists of 7381 triplets (anchor, positive, negative) extracted from the [Mixing Secrets](https://www.cambridge-mt.com/ms/mtk/)
 data so that the anchor and the positive example are from the same file and the negative example is from a different file.
