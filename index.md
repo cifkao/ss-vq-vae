@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', function () {
 <thead>
   <tr>
     {% for name in site.data.examples_synth.header %}
-    <th>{{ name }}</th>
+    <th>{{ name | markdownify | remove: '<p>' | remove: '</p>' }}</th>
     {% endfor %}
   </tr>
 </thead>
@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', function () {
 <thead>
   <tr>
     {% for name in site.data.examples_real.header %}
-    <th>{{ name }}</th>
+    <th>{{ name | markdownify | remove: '<p>' | remove: '</p>' }}</th>
     {% endfor %}
   </tr>
 </thead>

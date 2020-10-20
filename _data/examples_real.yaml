@@ -85,5 +85,5 @@ header:
 - Style input
 - VQ-VAE (ours)
 - Musaicing
-- U+L (tuned)
-- U+L (w=10)
+- U+L ($$\lambda_s=10^{-2.1}\lambda_c$$)
+- U+L ($$\lambda_s=10\lambda_c$$)
