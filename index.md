@@ -87,3 +87,8 @@ The audio was synthesized using the [Timbres Of Heaven](http://midkar.com/soundf
 We randomly draw 721 content-style input pairs and generate a corresponding ground-truth target for each pair by synthesizing the content input using the instrument of the style input.
 To avoid pairs of extremely different inputs (e.g. bass line + piccolo duet) for which the task would make little sense, we sort all instrument parts into 4 bins using two median splits: on the average pitch and on the average number of voices (simultaneous notes); we then form each pair by drawing two examples from the same bin.
 To obtain a balanced distribution of instruments, we limit the total number of examples per MIDI program to 4.
+
+### Timbre dissimilarity metric
+The metric uses a sequence of MFCC vectors (using only coefficients 2–13) as input and is trained using the triplet loss.
+The triplets (anchor, positive, negative) are extracted from the [Mixing Secrets](https://www.cambridge-mt.com/ms/mtk/)
+data so that the anchor and the positive example are from the same file and the negative example is from a different file.
