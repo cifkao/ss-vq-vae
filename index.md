@@ -1,6 +1,5 @@
 ---
-title: Hello world
-description: Site under construction
+title: Self-Supervised VQ-VAE for One-Shot Music Style Transfer
 ---
 
 <script>
