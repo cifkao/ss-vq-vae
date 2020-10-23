@@ -20,6 +20,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 ## Contents
+{: .no_toc}
 * TOC
 {:toc}
 
