@@ -1,5 +1,6 @@
 ---
 title: Self-Supervised VQ-VAE for One-Shot Music Style Transfer
+description: 'Supplementary material'
 ---
 
 <script>
