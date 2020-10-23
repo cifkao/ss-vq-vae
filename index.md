@@ -27,6 +27,8 @@ window.addEventListener('DOMContentLoaded', function () {
 ## Examples
 
 ### Artificial inputs
+The following is a random sample of the synthetic test set with outputs of our model and the two baselines (musaicing and U+L).
+For U+L (Ulyanov and Lebedev), we include both the tuned version ($$\lambda_s=10^{-2.1}\lambda_c$$) and a version with a higher style weight ($$\lambda_s=10\lambda_c$$).
 
 <table class="audio-table">
 <thead>
@@ -44,6 +46,72 @@ window.addEventListener('DOMContentLoaded', function () {
 			<audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/{{ item.audio_url }}" controls></audio>
 			{% if item.label %}
 				<span class="audio-label">{{ item.label }}</span>
+			{% endif %}
+		</td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
+
+#### 'Good' outputs
+{: .no_toc}
+Here, we show a sample of the best outputs of our system (below the 5th percentile) according to the LSD metric.
+
+<table class="audio-table">
+<thead>
+  <tr>
+    {% for name in site.data.examples_synth_good.header %}
+    <th>{{ name | markdownify | remove: '<p>' | remove: '</p>' }}</th>
+    {% endfor %}
+  </tr>
+</thead>
+<tbody>
+  {% for row in site.data.examples_synth_good.body %}
+  <tr>
+    {% for item in row %}
+    <td>
+      {% if item.audio_url %}
+        <audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/{{ item.audio_url }}" controls></audio>
+      {% endif %}
+			{% if item.label %}
+				<span class="audio-label">{{ item.label }}</span>
+			{% endif %}
+			{% if item.value %}
+				{{ item.value }}
+			{% endif %}
+		</td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
+
+#### 'Bad' outputs
+{: .no_toc}
+Similarly, here is a sample of the worst outputs (above the 95th percentile) according to the LSD metric.
+
+<table class="audio-table">
+<thead>
+  <tr>
+    {% for name in site.data.examples_synth_bad.header %}
+    <th>{{ name | markdownify | remove: '<p>' | remove: '</p>' }}</th>
+    {% endfor %}
+  </tr>
+</thead>
+<tbody>
+  {% for row in site.data.examples_synth_bad.body %}
+  <tr>
+    {% for item in row %}
+    <td>
+      {% if item.audio_url %}
+        <audio src="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth/{{ item.audio_url }}" controls></audio>
+      {% endif %}
+			{% if item.label %}
+				<span class="audio-label">{{ item.label }}</span>
+			{% endif %}
+			{% if item.value %}
+				{{ item.value }}
 			{% endif %}
 		</td>
     {% endfor %}

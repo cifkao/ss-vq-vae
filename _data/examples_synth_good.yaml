@@ -1,0 +1,59 @@
+body:
+- - audio_url: content/9d114e64fdf21143073d2dc7e5cd755b.content.mp3
+    label: Acoustic Guitar (nylon)
+  - audio_url: style/9d114e64fdf21143073d2dc7e5cd755b.style.mp3
+    label: Orchestral Harp
+  - audio_url: target/9d114e64fdf21143073d2dc7e5cd755b.target.mp3
+    label: Orchestral Harp
+  - audio_url: vq-vae/446.mp3
+  - value: '6.5472'
+  - value: '0.0302'
+  - value: '0.1604'
+- - audio_url: content/c00ac2a304c8d8e593f25e6dcb8745ad.content.mp3
+    label: Honky-tonk Piano
+  - audio_url: style/c00ac2a304c8d8e593f25e6dcb8745ad.style.mp3
+    label: Distortion Guitar
+  - audio_url: target/c00ac2a304c8d8e593f25e6dcb8745ad.target.mp3
+    label: Distortion Guitar
+  - audio_url: vq-vae/548.mp3
+  - value: '6.7790'
+  - value: '0.0881'
+  - value: '0.7856'
+- - audio_url: content/b253ad389ac8290f563aea3c7972826d.content.mp3
+    label: Lead 8 (bass + lead)
+  - audio_url: style/b253ad389ac8290f563aea3c7972826d.style.mp3
+    label: Bright Acoustic Piano
+  - audio_url: target/b253ad389ac8290f563aea3c7972826d.target.mp3
+    label: Bright Acoustic Piano
+  - audio_url: vq-vae/520.mp3
+  - value: '6.6822'
+  - value: '0.0746'
+  - value: '0.4663'
+- - audio_url: content/c5af637873d79a1d040f982b183b6da4.content.mp3
+    label: Synth Bass 1
+  - audio_url: style/c5af637873d79a1d040f982b183b6da4.style.mp3
+    label: Clavinet
+  - audio_url: target/c5af637873d79a1d040f982b183b6da4.target.mp3
+    label: Clavinet
+  - audio_url: vq-vae/570.mp3
+  - value: '6.7523'
+  - value: '0.0292'
+  - value: '0.4499'
+- - audio_url: content/903c75a8ccdb9cc0ad69b2e02f28538c.content.mp3
+    label: Acoustic Guitar (nylon)
+  - audio_url: style/903c75a8ccdb9cc0ad69b2e02f28538c.style.mp3
+    label: Tango Accordion
+  - audio_url: target/903c75a8ccdb9cc0ad69b2e02f28538c.target.mp3
+    label: Tango Accordion
+  - audio_url: vq-vae/401.mp3
+  - value: '7.1450'
+  - value: '0.1637'
+  - value: '0.2526'
+header:
+- Content input
+- Style input
+- Target
+- Output
+- LSD<sub>T</sub>
+- Timbre<sub>T</sub>
+- Pitch<sub>T</sub>

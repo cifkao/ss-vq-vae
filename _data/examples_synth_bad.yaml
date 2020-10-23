@@ -1,0 +1,59 @@
+body:
+- - audio_url: content/e2682f025cfcd5c6588a39b6656e0914.content.mp3
+    label: Acoustic Guitar (steel)
+  - audio_url: style/e2682f025cfcd5c6588a39b6656e0914.style.mp3
+    label: Whistle
+  - audio_url: target/e2682f025cfcd5c6588a39b6656e0914.target.mp3
+    label: Whistle
+  - audio_url: vq-vae/632.mp3
+  - value: '22.7329'
+  - value: '0.4901'
+  - value: '0.5881'
+- - audio_url: content/8e929f28fa7728d035ed98cb8010a82d.content.mp3
+    label: Pad 3 (polysynth)
+  - audio_url: style/8e929f28fa7728d035ed98cb8010a82d.style.mp3
+    label: Koto
+  - audio_url: target/8e929f28fa7728d035ed98cb8010a82d.target.mp3
+    label: Koto
+  - audio_url: vq-vae/392.mp3
+  - value: '20.8195'
+  - value: '0.4434'
+  - value: '0.6820'
+- - audio_url: content/ec1df0e3291259a040cc709a5acc4b92.content.mp3
+    label: Orchestral Harp
+  - audio_url: style/ec1df0e3291259a040cc709a5acc4b92.style.mp3
+    label: Harmonica
+  - audio_url: target/ec1df0e3291259a040cc709a5acc4b92.target.mp3
+    label: Harmonica
+  - audio_url: vq-vae/659.mp3
+  - value: '22.0352'
+  - value: '0.3142'
+  - value: '0.5058'
+- - audio_url: content/c4139f75fa7d61dbc7b27d8eb7cd5dde.content.mp3
+    label: FX 8 (sci-fi)
+  - audio_url: style/c4139f75fa7d61dbc7b27d8eb7cd5dde.style.mp3
+    label: Guitar Harmonics
+  - audio_url: target/c4139f75fa7d61dbc7b27d8eb7cd5dde.target.mp3
+    label: Guitar Harmonics
+  - audio_url: vq-vae/563.mp3
+  - value: '21.1952'
+  - value: '0.1221'
+  - value: '0.4858'
+- - audio_url: content/1df61a3091b0b02b246fb1e224e1e38d.content.mp3
+    label: Glockenspiel
+  - audio_url: style/1df61a3091b0b02b246fb1e224e1e38d.style.mp3
+    label: Vibraphone
+  - audio_url: target/1df61a3091b0b02b246fb1e224e1e38d.target.mp3
+    label: Vibraphone
+  - audio_url: vq-vae/083.mp3
+  - value: '19.3475'
+  - value: '0.3258'
+  - value: '0.6435'
+header:
+- Content input
+- Style input
+- Target
+- Output
+- LSD<sub>T</sub>
+- Timbre<sub>T</sub>
+- Pitch<sub>T</sub>
