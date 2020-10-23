@@ -158,7 +158,8 @@ To avoid pairs of extremely different inputs (e.g. bass line + piccolo duet) for
 To obtain a balanced distribution of instruments, we limit the total number of examples per MIDI program to 4.
 
 ### Timbre dissimilarity metric
-The metric uses a sequence of MFCC vectors (only coefficients 2–13) as input and is trained using the triplet loss.
+The metric uses a sequence of MFCC vectors (only coefficients 2–13) as input and is trained using the triplet loss
+(using the code from the [ISMIR 2020 metric learning tutorial](https://github.com/bmcfee/ismir2020-metric-learning)).
 The training dataset consists of 7381 triplets (anchor, positive, negative) extracted from the [Mixing Secrets](https://www.cambridge-mt.com/ms/mtk/)
 data so that the anchor and the positive example are from the same file and the negative example is from a different file.
 The aim is to make the metric good at discriminating between different instruments, but largely pitch-invariant.
