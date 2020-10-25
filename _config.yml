@@ -4,9 +4,26 @@ github:
   is_project_page: false
 
 markdown: kramdown
+kramdown:
+  math_engine: katex
 
 defaults:
   - scope:
       path: ""
     values:
       layout: default
+
+exclude:
+  - assets/js
+  - node_modules
+  - vendor
+  - Gemfile.lock
+  - package.json
+  - yarn.lock
+  - yarn-error.log
+
+include:
+  - .nojekyll
+
+keep_files:
+  - assets/js
