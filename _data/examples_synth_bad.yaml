@@ -1,4 +1,15 @@
-body:
+columns:
+- header: Content input
+- header: Style input
+- header: Target
+- header: Output
+- class: metric-col
+  header: LSD<sub>T</sub>
+- class: metric-col
+  header: Timbre<sub>T</sub>
+- class: metric-col
+  header: Pitch<sub>T</sub>
+rows:
 - - audio_url: content/e2682f025cfcd5c6588a39b6656e0914.content.mp3
     label: Acoustic Guitar (steel)
   - audio_url: style/e2682f025cfcd5c6588a39b6656e0914.style.mp3
@@ -49,11 +60,3 @@ body:
   - value: '19.3475'
   - value: '0.3258'
   - value: '0.6435'
-header:
-- Content input
-- Style input
-- Target
-- Output
-- LSD<sub>T</sub>
-- Timbre<sub>T</sub>
-- Pitch<sub>T</sub>

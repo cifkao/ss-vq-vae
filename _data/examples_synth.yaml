@@ -1,4 +1,12 @@
-body:
+columns:
+- header: Content input
+- header: Style input
+- header: Target
+- header: VQ-VAE (ours)
+- header: Musaicing
+- header: U+L ($$\lambda_s=10^{-2.1}\lambda_c$$)
+- header: U+L ($$\lambda_s=10\lambda_c$$)
+rows:
 - - audio_url: content/0d6e408c76f995349f6fba3b04896352.content.mp3
     label: Tinkle Bell
   - audio_url: style/0d6e408c76f995349f6fba3b04896352.style.mp3
@@ -99,11 +107,3 @@ body:
   - audio_url: driedger/00390.mp3
   - audio_url: ulyanov/390.mp3
   - audio_url: ulyanov_sw100/390.mp3
-header:
-- Content input
-- Style input
-- Target
-- VQ-VAE (ours)
-- Musaicing
-- U+L ($$\lambda_s=10^{-2.1}\lambda_c$$)
-- U+L ($$\lambda_s=10\lambda_c$$)

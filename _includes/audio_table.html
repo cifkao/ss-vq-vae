@@ -1,13 +1,15 @@
 <table class="audio-table">
 <thead>
   <tr>
-    {% for name in include.table_data.header %}
-    <th>{{ name | markdownify | remove: '<p>' | remove: '</p>' }}</th>
+    {% for column in include.table_data.columns %}
+    <th {% if column.class %}class="{{ column.class }}"{% endif %}>
+      {{ column.header | markdownify | remove: '<p>' | remove: '</p>' }}
+    </th>
     {% endfor %}
   </tr>
 </thead>
 <tbody>
-  {% for row in include.table_data.body %}
+  {% for row in include.table_data.rows %}
   <tr>
     {% for item in row %}
     <td>

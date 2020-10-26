@@ -1,3 +1,9 @@
+.main-content {
+  /* Prevent overflow on mobile, see https://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers */
+  position: relative;
+  overflow-x: hidden;
+}
+
 table.audio-table {
   td {
     vertical-align: top;
@@ -22,6 +28,10 @@ table.audio-table {
 
   @include large {
     table-layout: fixed;
+
+    .metric-col {
+      width: 7em;
+    }
   }
 
   @media screen and (max-width: #{$large-breakpoint}) {
