@@ -3,22 +3,6 @@ title: Self-Supervised VQ-VAE for One-Shot Music Style Transfer
 description: 'Supplementary material'
 ---
 
-<script>
-var playingAudio = null;
-
-window.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('audio').forEach(function (element) {
-    element.addEventListener('play', function() {
-      if (playingAudio != null && playingAudio !== element && !playingAudio.paused) {
-        playingAudio.pause();
-      }
-      playingAudio = element;
-    });
-  });
-});
-</script>
-
-
 ## Contents
 {: .no_toc}
 * TOC
