@@ -1,0 +1,33 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches: [ gh-pages-src ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: Set up Ruby environment
+        uses: ruby/setup-ruby@v1.47.0
+        with:
+          ruby-version: 2.5.5
+          bundler-cache: true
+      
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v1.4.1
+
+      - name: Install NPM package
+        run: yarn install
+        
+      - name: Build website
+        run: yarn build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.PAGES_DEPLOY_KEY }}
+          publish_dir: ./_site
