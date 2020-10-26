@@ -7,7 +7,7 @@
     "dev": "npm-run-all --parallel watch:* serve",
     "watch:parcel": "parcel watch assets/js/index.js --dist-dir _site/assets/js",
     "watch:jekyll": "bundle exec jekyll build --watch",
-    "serve": "live-server --host=`hostname --fqdn` --port=4000 _site"
+    "serve": "live-server --host=`hostname --fqdn` --port=4000 --mount=/ss-vq-vae/:_site _site"
   },
   "devDependencies": {
     "live-server": "^1.2.1",

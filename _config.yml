@@ -13,6 +13,8 @@ defaults:
     values:
       layout: default
 
+baseurl: /ss-vq-vae/
+
 exclude:
   - assets/js
   - node_modules
