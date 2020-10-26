@@ -1,0 +1,28 @@
+<table class="audio-table">
+<thead>
+  <tr>
+    {% for name in include.table_data.header %}
+    <th>{{ name | markdownify | remove: '<p>' | remove: '</p>' }}</th>
+    {% endfor %}
+  </tr>
+</thead>
+<tbody>
+  {% for row in include.table_data.body %}
+  <tr>
+    {% for item in row %}
+    <td>
+      {% if item.audio_url %}
+        <audio src="{{ include.base_url }}/{{ item.audio_url }}" controls></audio>
+      {% endif %}
+			{% if item.label %}
+				<span class="audio-label">{{ item.label }}</span>
+			{% endif %}
+			{% if item.value %}
+				{{ item.value }}
+			{% endif %}
+		</td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
