@@ -14,7 +14,7 @@
     {% for item in row %}
     <td>
       {% if item.audio_url %}
-        <audio src="{{ include.base_url }}/{{ item.audio_url }}" controls></audio>
+        <audio src="{{ include.base_url }}/{{ item.audio_url | uri_escape }}" controls></audio>
       {% endif %}
 			{% if item.label %}
 				<span class="audio-label">{{ item.label }}</span>
