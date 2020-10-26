@@ -6,84 +6,54 @@ columns:
 - header: U+L ($$\lambda_s=10^{-2.1}\lambda_c$$)
 - header: U+L ($$\lambda_s=10\lambda_c$$)
 rows:
-- - audio_url: content/MR0902_JamesElder_MR0902_JamesElder_Full_13_SynthFX1.163.mp3
-    label: SynthFX1
-  - audio_url: style/Fergessen_TheWind_Fergessen_TheWind_Full_17_SlecGtr3a_Close.146.mp3
-    label: SlecGtr3a Close
-  - audio_url: vq-vae/684.mp3
-  - audio_url: driedger/00684.mp3
-  - audio_url: ulyanov (tuned)/684.mp3
-  - audio_url: ulyanov (w=10)/684.mp3
-- - audio_url: content/Fergessen_NosPalpitants_Fergessen_NosPalpitants_Full_17_ElecGtr1a_Close.137.mp3
-    label: ElecGtr1a Close
-  - audio_url: style/MR1101_JohnnyLokke_MR1101_JohnnyLokke_Full_14_ElecGtr2.014.mp3
-    label: ElecGtr2
-  - audio_url: vq-vae/559.mp3
-  - audio_url: driedger/00559.mp3
-  - audio_url: ulyanov (tuned)/559.mp3
-  - audio_url: ulyanov (w=10)/559.mp3
-- - audio_url: content/Skelpolu_TogetherAlone_Skelpolu_TogetherAlone_Full_13_Synth.0190.mp3
-    label: Synth
-  - audio_url: style/MaurizioPagnuttiSextet_AllTheGinIsGone_MaurizioPagnuttiSextet_AllTheGinIsGone_Full_12_PianoMics1.08.mp3
-    label: PianoMics1
-  - audio_url: vq-vae/629.mp3
-  - audio_url: driedger/00629.mp3
-  - audio_url: ulyanov (tuned)/629.mp3
-  - audio_url: ulyanov (w=10)/629.mp3
-- - audio_url: content/Zwiepack_Air_Zwiepack_Air_Full_01_MainPair_DominantArray.172.mp3
-    label: MainPair DominantArray
-  - audio_url: style/MR1210_JamesMay_MR1210_JamesMay_Full_10_Mandolin2.0047.mp3
-    label: Mandolin2
-  - audio_url: vq-vae/192.mp3
-  - audio_url: driedger/00192.mp3
-  - audio_url: ulyanov (tuned)/192.mp3
-  - audio_url: ulyanov (w=10)/192.mp3
-- - audio_url: content/AndrewCole_DeadRoses_AC GUITAR-DI-SSL DUALITY.0091.mp3
-    label: AC GUITAR DI SSL DUALITY
-  - audio_url: style/LeftoverSalmon_RiversRisin_LS_RiversRisin_Full Session_AC GUITAR-M60-GRACE.0202.mp3
-    label: AC GUITAR M60 GRACE
-  - audio_url: vq-vae/359.mp3
-  - audio_url: driedger/00359.mp3
-  - audio_url: ulyanov (tuned)/359.mp3
-  - audio_url: ulyanov (w=10)/359.mp3
-- - audio_url: content/Turbosauro_Magilla_Turbosauro_Magilla_Full_15_ElecGtr1DTAmp.095.mp3
-    label: ElecGtr1DTAmp
-  - audio_url: style/NickiBluhmAndTheGramblers_GoGoGo_NBATG - Bass Guitar DI.0028.mp3
-    label: NBATG Bass Guitar DI
-  - audio_url: vq-vae/009.mp3
-  - audio_url: driedger/00009.mp3
-  - audio_url: ulyanov (tuned)/009.mp3
-  - audio_url: ulyanov (w=10)/009.mp3
-- - audio_url: content/AngeloBoltini_ThisTown_AngeloBoltini_ThisTown_Full_46_Strings_SectionMic_VlnI.188.mp3
-    label: Strings SectionMic VlnI
-  - audio_url: style/APZX_Transcention_APZX_Transcention_Full_14_SynthArp1.130.mp3
-    label: SynthArp1
-  - audio_url: vq-vae/277.mp3
-  - audio_url: driedger/00277.mp3
-  - audio_url: ulyanov (tuned)/277.mp3
-  - audio_url: ulyanov (w=10)/277.mp3
-- - audio_url: content/LindyHipBigBand_TheOpener_LindyHipBigBand_TheOpener_Full_11_SaxAlto01.0143.mp3
-    label: SaxAlto01
-  - audio_url: style/TheTravellingBand_Quicksand_TheTravellingBand_Quicksand_Full_17_ElecGtr2Close.145.mp3
-    label: ElecGtr2Close
-  - audio_url: vq-vae/599.mp3
-  - audio_url: driedger/00599.mp3
-  - audio_url: ulyanov (tuned)/599.mp3
-  - audio_url: ulyanov (w=10)/599.mp3
-- - audio_url: content/MattSzlachetka_HeartOfMyHomeTown_MattSzlachetka_HeartOfMyHomeTown_Full_Bass-Amp-AK47.0027.mp3
-    label: Bass Amp AK47
-  - audio_url: style/TheWesternDen_LikeYouDo_The Western Den_Like You Do_Keys-Active
-      DI.0093.mp3
-    label: Keys Active DI
-  - audio_url: vq-vae/070.mp3
-  - audio_url: driedger/00070.mp3
-  - audio_url: ulyanov (tuned)/070.mp3
-  - audio_url: ulyanov (w=10)/070.mp3
-- - audio_url: content/Diesel13_ColourMeRed_Diesel13_ColourMeRed_Full_30_RhodesDI.0132.mp3
-    label: RhodesDI
-  - audio_url: style/MR0908_AlJames_MR0908_AlJames_Full_28_ElecGtr3MIDI.031.mp3
-    label: ElecGtr3MIDI
-  - audio_url: vq-vae/472.mp3
-  - audio_url: driedger/00472.mp3
-  - audio_url: ulyanov (tuned)/472.mp3
-  - audio_url: ulyanov (w=10)/472.mp3
+- - audio_url: content/Triviul_Dorothy_Triviul_Dorothy_Full_07_Mellotron.120.mp3
+    label: Mellotron
+  - audio_url: style/UncleDad_WhoIAm_legend-strings_AC GUITAR-3-CU29-SHADOWHILL.R.0106.mp3
+    label: AC GUITAR 3 CU29 SHADOWHILL R
+  - audio_url: vq-vae/037.mp3
+  - audio_url: driedger/00037.mp3
+  - audio_url: ulyanov (tuned)/037.mp3
+  - audio_url: ulyanov (w=10)/037.mp3
+- - audio_url: content/EndaReilly_CurAnLongAgSeol_EndaReilly_CurAnLongAgSeol_Full_10_Fiddle2.0163.mp3
+    label: Fiddle2
+  - audio_url: style/ScottElliott_AeternumVale_ScottElliott_AeternumVale_Full_41_Violins.0138.mp3
+    label: Violins
+  - audio_url: vq-vae/235.mp3
+  - audio_url: driedger/00235.mp3
+  - audio_url: ulyanov (tuned)/235.mp3
+  - audio_url: ulyanov (w=10)/235.mp3
+- - audio_url: content/AbletonesBigBand_SongOfIndia_UPRIGHT BASS - ELA M 260 - Neve
+      33102.136.mp3
+    label: UPRIGHT BASS ELA M 260 Neve 33102
+  - audio_url: style/CarlosGonzalez_APlaceForUs_CarlosGonzalez_APlaceForUs_Full_21_Taiko.0115.mp3
+    label: Taiko
+  - audio_url: vq-vae/072.mp3
+  - audio_url: driedger/00072.mp3
+  - audio_url: ulyanov (tuned)/072.mp3
+  - audio_url: ulyanov (w=10)/072.mp3
+- - audio_url: content/AllHandsLost_Ambitions_AllHandsLost_Ambitions_Full_Guitar 2.0292.mp3
+    label: Guitar 2
+  - audio_url: style/SunshineGarciaBand_ForIAmTheMoon_zip5-outro-uke-shaker_OUTRO
+      ALTO-251E-SSL6000E.0290.mp3
+    label: OUTRO ALTO 251E SSL6000E
+  - audio_url: vq-vae/645.mp3
+  - audio_url: driedger/00645.mp3
+  - audio_url: ulyanov (tuned)/645.mp3
+  - audio_url: ulyanov (w=10)/645.mp3
+- - audio_url: content/DonCamilloChoir_MarshMarigoldsSong_DonCamilloChoir_MarshMarigoldsSong_Full_08_BassCloseMic2.000.mp3
+    label: BassCloseMic2
+  - audio_url: style/EnterTheHaggis_TwoBareHands_25. Jubilee Riots - 2 Bar Hands_ELE
+      Guitars-Ignater-M81.160.mp3
+    label: ELE Guitars Ignater M81
+  - audio_url: vq-vae/144.mp3
+  - audio_url: driedger/00144.mp3
+  - audio_url: ulyanov (tuned)/144.mp3
+  - audio_url: ulyanov (w=10)/144.mp3
+- - audio_url: content/cryonicPAX_Melancholy_cryonicPAX_Melancholy_Full_10_Bells.0034.mp3
+    label: Bells
+  - audio_url: style/KungFu_JoyRide_40. Kung Fu - Joy ride_Bass-Mic-647.0090.mp3
+    label: Bass Mic 647
+  - audio_url: vq-vae/129.mp3
+  - audio_url: driedger/00129.mp3
+  - audio_url: ulyanov (tuned)/129.mp3
+  - audio_url: ulyanov (w=10)/129.mp3

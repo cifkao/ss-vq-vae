@@ -1,0 +1,67 @@
+columns:
+- header: Content input
+- header: Style input
+- header: VQ-VAE (ours)
+- header: Musaicing
+- header: U+L ($$\lambda_s=10^{-2.1}\lambda_c$$)
+- header: U+L ($$\lambda_s=10\lambda_c$$)
+rows:
+- - audio_url: content/UnicornRodeo_Maybe_UnicornRodeo_Maybe_Full_25_ElecGtr2CloseMic3.0148.mp3
+    label: ElecGtr2CloseMic3
+  - audio_url: style/AllenStone_Naturally_Allen Stone_Naturally_Keys-Organ-Active
+      DI.0253.mp3
+    label: Keys Organ Active DI
+  - audio_url: vq-vae/109.mp3
+  - audio_url: driedger/00109.mp3
+  - audio_url: ulyanov (tuned)/109.mp3
+  - audio_url: ulyanov (w=10)/109.mp3
+- - audio_url: content/Skelpolu_TogetherAlone_Skelpolu_TogetherAlone_Full_13_Synth.0190.mp3
+    label: Synth
+  - audio_url: style/MaurizioPagnuttiSextet_AllTheGinIsGone_MaurizioPagnuttiSextet_AllTheGinIsGone_Full_12_PianoMics1.08.mp3
+    label: PianoMics1
+  - audio_url: vq-vae/629.mp3
+  - audio_url: driedger/00629.mp3
+  - audio_url: ulyanov (tuned)/629.mp3
+  - audio_url: ulyanov (w=10)/629.mp3
+- - audio_url: content/Diesel13_ColourMeRed_Diesel13_ColourMeRed_Full_30_RhodesDI.0062.mp3
+    label: RhodesDI
+  - audio_url: style/NikolaStajicFtVlasisKostas_Nalim_Nikola Stajic ft. Vlasis Kostas_Nalim_Acoustic
+      Guitar-Lead-Ela M 251.0170.mp3
+    label: Acoustic Guitar Lead Ela M 251
+  - audio_url: vq-vae/493.mp3
+  - audio_url: driedger/00493.mp3
+  - audio_url: ulyanov (tuned)/493.mp3
+  - audio_url: ulyanov (w=10)/493.mp3
+- - audio_url: content/HurrayForTheRiffRaff_LivingInTheCity_Hurray for the Riff Raff_Livin
+      in the City_Bass-Amp-M82.0018.mp3
+    label: Bass Amp M82
+  - audio_url: style/RememberDecember_CUNextTime_RememberDecember_CUNextTime_Full_11_Bass_bip.041.mp3
+    label: Bass bip
+  - audio_url: vq-vae/122.mp3
+  - audio_url: driedger/00122.mp3
+  - audio_url: ulyanov (tuned)/122.mp3
+  - audio_url: ulyanov (w=10)/122.mp3
+- - audio_url: content/MR0902_JamesElder_MR0902_JamesElder_Full_13_SynthFX1.163.mp3
+    label: SynthFX1
+  - audio_url: style/Fergessen_TheWind_Fergessen_TheWind_Full_17_SlecGtr3a_Close.146.mp3
+    label: SlecGtr3a Close
+  - audio_url: vq-vae/684.mp3
+  - audio_url: driedger/00684.mp3
+  - audio_url: ulyanov (tuned)/684.mp3
+  - audio_url: ulyanov (w=10)/684.mp3
+- - audio_url: content/NickiBluhmAndTheGramblers_GoGoGo_NBATG - Rhodes - DI.098.mp3
+    label: NBATG Rhodes DI
+  - audio_url: style/JessicaChildress_SlowDown_SD KEYS-DI-GRACE.147.mp3
+    label: SD KEYS DI GRACE
+  - audio_url: vq-vae/387.mp3
+  - audio_url: driedger/00387.mp3
+  - audio_url: ulyanov (tuned)/387.mp3
+  - audio_url: ulyanov (w=10)/387.mp3
+- - audio_url: content/ButterflyEffect_PreachRightHere_ButterflyEffect_PreachRightHere_Full_16_Dulcimer2.076.mp3
+    label: Dulcimer2
+  - audio_url: style/AngeloBoltini_ThisTown_AngeloBoltini_ThisTown_Full_47_Strings_SectionMic_Vln2.0181.mp3
+    label: Strings SectionMic Vln2
+  - audio_url: vq-vae/174.mp3
+  - audio_url: driedger/00174.mp3
+  - audio_url: ulyanov (tuned)/174.mp3
+  - audio_url: ulyanov (w=10)/174.mp3

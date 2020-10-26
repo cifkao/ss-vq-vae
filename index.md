@@ -29,7 +29,14 @@ Similarly, here is a sample of the worst outputs (above the 95th percentile) acc
 {% include audio_table.html table_data=site.data.examples_synth_bad base_url="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth" %}
 
 ### Real inputs
+The following are outputs on the 'Mixing Secrets' test set, first some cherry-picked ones and then a random sample.
 
+#### Selection
+{: .no_toc}
+{% include audio_table.html table_data=site.data.examples_real_selected base_url="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real" %}
+
+#### Random sample
+{: .no_toc}
 {% include audio_table.html table_data=site.data.examples_real base_url="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real" %}
 
 ## Additional information
