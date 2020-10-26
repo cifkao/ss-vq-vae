@@ -24,8 +24,5 @@ exclude:
   - yarn.lock
   - yarn-error.log
 
-include:
-  - .nojekyll
-
 keep_files:
   - assets/js
