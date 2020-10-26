@@ -4,8 +4,9 @@ $medium-breakpoint: 42em !default;
 
 // Headers
 $header-heading-color: #fff !default;
-$header-bg-color: #159957 !default;
-$header-bg-color-secondary: #155799 !default;
+$header-bg-color: rgba(0, 0, 0, 0.8);  //#159957 !default;
+$header-bg-color-secondary: rgba(0, 0, 0, 0.6);  //#155799 !default;
+$header-bg-image: url('/assets/img/karim-manjra-cW3nDFVpi10-unsplash.jpg');  // none !default;
 
 // Text
 $section-headings-color: #159957 !default;
