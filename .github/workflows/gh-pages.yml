@@ -20,7 +20,19 @@ jobs:
       - name: Set up Node.js environment
         uses: actions/setup-node@v1.4.1
 
-      - name: Install NPM package
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}- 
+
+      - name: Install Node.js dependencies
         run: yarn install
         
       - name: Build website
