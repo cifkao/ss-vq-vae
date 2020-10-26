@@ -43,12 +43,20 @@ The following are outputs on the 'Mixing Secrets' test set, first some cherry-pi
 This section contains details omitted from the paper for brevity.
 
 ### Artificial test set
-The artificial test set was created from the [Lakh MIDI Dataset](https://colinraffel.com/projects/lmd/){:target="_blank"} using a set of files held out from the training set.
-The audio was synthesized using the [Timbres Of Heaven](http://midkar.com/soundfonts/){:target="_blank"} SoundFont, which was not used for the training set.
+The artificial test set was created from the [Lakh MIDI Dataset](https://colinraffel.com/projects/lmd/) using a set of files held out from the training set.
+The audio was synthesized using the [Timbres Of Heaven](http://midkar.com/soundfonts/) SoundFont, which was not used for the training set.
 
-We randomly draw 721 content-style input pairs and generate a corresponding ground-truth target for each pair by synthesizing the content input using the instrument (MIDI program) of the style input.
-To avoid pairs of extremely different inputs (e.g. bass line + piccolo duet) for which the task would make little sense, we sort all instrument parts into 4 bins using two median splits: on the average pitch and on the average number of voices (simultaneous notes); we then form each pair by drawing two examples from the same bin.
-To obtain a balanced distribution of instruments, we limit the total number of examples per MIDI program to 4.
+We randomly drew 721 content-style input pairs and generated a corresponding ground-truth target for each pair by synthesizing the content input using the instrument (MIDI program) of the style input.
+To avoid pairs of extremely different inputs (e.g. bass line + piccolo duet) for which the task would make little sense, we sorted all instrument parts into 4 bins using two median splits: on the average pitch and on the average number of voices (simultaneous notes); we then formed each pair by drawing two examples from the same bin.
+To obtain a balanced distribution of instruments, we limited the total number of examples per MIDI program to 4.
+
+### 'Real' test set
+The 'real data' test set was created from the [Mixing Secrets](https://www.cambridge-mt.com/ms/mtk/) collection.
+We used filename matching to exclude most drum, vocal and multi-instrument tracks and to balance the distribution of the remaining instruments
+(dominated by electric guitar and bass).
+To form the input pairs, we performed the same binning procedure as for the artificial test set, using the [multi-pitch MELODIA](https://essentia.upf.edu/reference/std_MultiPitchMelodia.html)
+algorithm to estimate the average pitch and number of voices.
+
 
 ### Timbre dissimilarity metric
 The metric uses a sequence of MFCC vectors (only coefficients 2–13) as input and is trained using the triplet loss
