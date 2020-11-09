@@ -76,9 +76,9 @@ def main():
 
     net = nn.Sequential(
         nn.Conv1d(in_channels=N_BINS,
-                out_channels=N_FILTERS,
-                kernel_size=11,
-                bias=False),
+                  out_channels=N_FILTERS,
+                  kernel_size=11,
+                  bias=False),
         nn.ReLU(),
     )
     net.requires_grad_(False)

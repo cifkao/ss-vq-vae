@@ -61,12 +61,12 @@ class Model(nn.Module):
         # Sum losses over time and batch, normalize by total time
         assert all(len(loss.shape) == 2 for loss in losses.values())
         losses = {name: loss.sum() / (length_c.sum() + torch.finfo(loss.dtype).eps)
-                for name, loss in losses.items()}
-        
+                  for name, loss in losses.items()}
+
         # Add losses which don't have the time dimension
         assert all(len(loss.shape) == 1 for loss in losses_s.values())
         losses.update({name: loss.mean() for name, loss in losses_s.items()})
-        
+
         return decoded, losses
 
     def encode_content(self, input):
@@ -74,7 +74,7 @@ class Model(nn.Module):
         if self.vq is None:
             return encoded, encoded, {}
         return self.vq(encoded)
-    
+
     def encode_style(self, input, length):
         encoded = self.style_encoder_1d(input)
 
@@ -230,7 +230,7 @@ class Experiment:
                       for name in all_losses[0]}
         self._add_total_loss(all_losses)
         return all_outputs, all_losses
-    
+
     def run_files(self, pairs_path, output_list_path, output_prefix, batch_size=None):
         loader_fn = self._cfg['val_loader'].bind(
             torch.utils.data.DataLoader,

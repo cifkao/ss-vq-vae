@@ -20,7 +20,7 @@ import tensorflow.keras.backend as K
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, ModelCheckpoint, CSVLogger
-from tensorflow.keras.layers import (Conv1D, MaxPool1D, BatchNormalization, GlobalAvgPool1D, Dense, dot, 
+from tensorflow.keras.layers import (Conv1D, MaxPool1D, BatchNormalization, GlobalAvgPool1D, Dense, dot,
                                      Activation, Input, Flatten, Lambda, Embedding, Concatenate, Layer, Reshape)
 from sklearn.preprocessing import normalize
 
@@ -36,7 +36,7 @@ def build_model(num_features):
 
     # Backbone model.
     num_frames = None
-    x_in = Input(shape = (num_frames, num_features))
+    x_in = Input(shape=(num_frames, num_features))
     x = basic_block(x_in, 64, 4)
     x = basic_block(x, 64, 4)
     x = basic_block(x, 64, 4)

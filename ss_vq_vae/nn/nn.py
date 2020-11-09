@@ -19,7 +19,7 @@ class RNNWrapper(nn.Module):
             self.rnn = self._cfg['rnn'].configure(batch_first=True)
         self.return_state = return_state
         self.return_output = return_output or not return_state
-    
+
     def forward(self, input):
         output, state = self.rnn(input.transpose(1, 2))
         output = output.transpose(1, 2)

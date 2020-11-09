@@ -6,6 +6,7 @@ import confugue
 import torch
 from torch import nn
 
+
 @confugue.configurable
 class VQEmbedding(nn.Module):
 
@@ -25,7 +26,7 @@ class VQEmbedding(nn.Module):
                      + torch.sum(self.embedding.weight ** 2, axis=-1))
         ids = torch.argmin(distances, axis=-1)
         quantized = self.embedding(ids)
-        
+
         losses = {
             'commitment': ((quantized.detach() - input) ** 2).mean(axis=-1)
         }
@@ -39,8 +40,8 @@ class VQEmbedding(nn.Module):
             # Modified straight-through gradient estimator
             # The gradient of the result gets copied to both inputs (quantized and non-quantized)
             quantized = input + quantized - input.detach()
-        
+
         if self._axis != -1:
             quantized = quantized.transpose(self._axis, -1).contiguous()
-        
+
         return quantized, ids, losses
