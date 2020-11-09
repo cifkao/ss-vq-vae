@@ -10,9 +10,17 @@ Copyright 2020 InterDigital R&D and Télécom Paris.
 Contents
 --------
 
-- `ss_vq_vae` – the main codebase; install with `pip install .`
+- `src` – the main codebase (the `ss-vq-vae` package); install with `pip install ./src`
 - `data` – Jupyter notebooks for data preparation
 - `experiments` – model configuration, evaluation, and other experimental stuff
+
+Setup
+-----
+
+```sh
+pip install -r requirements.txt
+pip install ./src
+```
 
 Acknowledgment
 --------------
