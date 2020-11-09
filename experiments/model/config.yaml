@@ -1,0 +1,134 @@
+model:
+  content_encoder:
+    - { class: !!python/name:torch.nn.Conv1d ,
+        in_channels: &in_channels 1025, out_channels: 1024,
+        kernel_size: 4, stride: 2, padding: 2 }
+
+    - { class: !!python/name:torch.nn.BatchNorm1d , num_features: 1024 }
+    - &nonlinearity { class: !!python/name:torch.nn.LeakyReLU , negative_slope: 0.1 }
+    - { class: !!python/name:torch.nn.Conv1d ,
+        in_channels: 1024, out_channels: 1024,
+        kernel_size: 4, stride: 2, padding: 2 }
+
+    - class: !!python/name:ss_vq_vae.nn.ResidualWrapper
+      modules:
+        - { class: !!python/name:torch.nn.BatchNorm1d , num_features: 1024 }
+        - *nonlinearity
+        - { class: !!python/name:torch.nn.Conv1d ,
+          in_channels: 1024, out_channels: 1024,
+          kernel_size: 1, stride: 1 }
+    - { class: !!python/name:torch.nn.BatchNorm1d , num_features: 1024 }
+
+  style_encoder_1d:
+    - { class: !!python/name:torch.nn.Conv1d ,
+        in_channels: *in_channels, out_channels: 1024,
+        kernel_size: 4, stride: 2 }
+
+    - class: !!python/name:ss_vq_vae.nn.ResidualWrapper
+      modules:
+        - { class: !!python/name:torch.nn.BatchNorm1d , num_features: 1024 }
+        - *nonlinearity
+        - { class: !!python/name:torch.nn.Conv1d ,
+          in_channels: 1024, out_channels: 1024,
+          kernel_size: 1, stride: 1 }
+    - { class: !!python/name:torch.nn.BatchNorm1d , num_features: 1024 }
+    - *nonlinearity
+  style_encoder_rnn:
+    input_size: 1024
+    hidden_size: 1024
+
+  vq:
+    num_embeddings: 2048
+    embedding_dim: 1024
+    init:
+        mode: fan_out
+
+  decoder:
+    - - { class: !!python/name:torch.nn.BatchNorm1d ,
+          num_features: !!python/object/apply:eval [ 1024 + 1024 ] }
+      - *nonlinearity
+      - { class: !!python/name:torch.nn.ConvTranspose1d ,
+          in_channels: !!python/object/apply:eval [ 1024 + 1024 ], out_channels: 1024,
+          kernel_size: 1, stride: 1 }
+      - class: !!python/name:ss_vq_vae.nn.ResidualWrapper
+        modules:
+          - { class: !!python/name:torch.nn.BatchNorm1d , num_features: 1024 }
+          - *nonlinearity
+          - class: !!python/name:ss_vq_vae.nn.RNNWrapper
+            rnn:
+              class: !!python/name:torch.nn.GRU
+              input_size: 1024
+              hidden_size: 1024
+      - { class: !!python/name:torch.nn.BatchNorm1d , num_features: 1024 }
+      - *nonlinearity
+      - { class: !!python/name:torch.nn.ConvTranspose1d ,
+          in_channels: 1024, out_channels: 1024,
+          kernel_size: 4, stride: 2, padding: 2, output_padding: 1 }
+
+    - - { class: !!python/name:torch.nn.BatchNorm1d ,
+          num_features: !!python/object/apply:eval [ 1024 + 1024 ] }
+      - *nonlinearity
+      - { class: !!python/name:torch.nn.ConvTranspose1d ,
+          in_channels: !!python/object/apply:eval [ 1024 + 1024 ], out_channels: 1024,
+          kernel_size: 1, stride: 1 }
+      - class: !!python/name:ss_vq_vae.nn.ResidualWrapper
+        modules:
+          - { class: !!python/name:torch.nn.BatchNorm1d , num_features: 1024 }
+          - *nonlinearity
+          - class: !!python/name:ss_vq_vae.nn.RNNWrapper
+            rnn:
+              class: !!python/name:torch.nn.GRU
+              input_size: 1024
+              hidden_size: 1024
+      - { class: !!python/name:torch.nn.BatchNorm1d , num_features: 1024 }
+      - *nonlinearity
+      - { class: !!python/name:torch.nn.ConvTranspose1d ,
+          in_channels: 1024, out_channels: 1024,
+          kernel_size: 4, stride: 2, padding: 2, output_padding: 1 }
+
+      - { class: !!python/name:torch.nn.BatchNorm1d , num_features: 1024 }
+      - *nonlinearity
+      - { class: !!python/name:torch.nn.ConvTranspose1d ,
+          in_channels: 1024, out_channels: *in_channels,
+          kernel_size: 1, stride: 1 }
+
+      - class: !!python/name:ss_vq_vae.nn.ResidualWrapper
+        modules:
+          - { class: !!python/name:torch.nn.BatchNorm1d , num_features: *in_channels }
+          - *nonlinearity
+          - class: !!python/name:ss_vq_vae.nn.RNNWrapper
+            rnn:
+              class: !!python/name:torch.nn.GRU
+              input_size: *in_channels
+              hidden_size: *in_channels
+      - { class: !!python/name:torch.nn.ReLU }
+
+optimizer:
+  lr: 0.0004
+commitment_loss_weight: 0.5
+
+sr: 16000
+spectrogram:
+  n_fft: &n_fft 2048
+  win_length: &win_length 2000
+  hop_length: &hop_length 500
+invert_spectrogram:
+  win_length: *win_length
+  hop_length: *hop_length
+
+train_loader:
+  batch_size: 256
+  num_workers: 8
+val_loader:
+  batch_size: 256
+  num_workers: 8
+data:
+  train:
+    path: ../data/comb/pairs_train
+  val:
+    path: ../data/comb/pairs_val
+
+epochs: 32
+log_period: 20
+val_period: 500
+sample_period: 4
