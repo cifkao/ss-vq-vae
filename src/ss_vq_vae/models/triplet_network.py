@@ -4,8 +4,8 @@
 
 """Triplet network for metric learning.
 
-Gently modified from the ISMIR 2020 Tutorial for Metric Learning in MIR,
-originally available at https://github.com/bmcfee/ismir2020-metric-learning/
+Gently modified from the ISMIR 2020 Tutorial for Metric Learning in MIR by Brian McFee, Jongpil Lee
+and Juhan Nam, originally available at https://github.com/bmcfee/ismir2020-metric-learning/
 and dedicated to the public domain under the CC0-1.0 license.
 """
 
