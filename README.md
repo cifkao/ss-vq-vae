@@ -10,8 +10,8 @@ Copyright 2020 InterDigital R&D and Télécom Paris.
 Contents
 --------
 
-- `src` – the main codebase (the `ss-vq-vae` package); install with `pip install ./src`
-- `data` – Jupyter notebooks for data preparation
+- `src` – the main codebase (the `ss-vq-vae` package); install with `pip install ./src`; usage details [below](#Usage)
+- `data` – Jupyter notebooks for data preparation (details [below](#Datasets))
 - `experiments` – model configuration, evaluation, and other experimental stuff
 
 Setup
@@ -21,6 +21,18 @@ Setup
 pip install -r requirements.txt
 pip install ./src
 ```
+
+Usage
+-----
+
+To train the model, go to `experiments`, then run:
+```sh
+python -m ss_vq_vae.models.vqvae_oneshot --logdir=model train
+```
+This is assuming the training data is prepared (see [below](#Datasets)).
+
+To run the trained model on a dataset, substitute `run` for `train` and specify the input and output paths as arguments (use `run --help` for more information).
+Alternatively, see the [`colab_demo.ipynb`](./experiments/colab_demo.ipynb) notebook for how to run the model from Python code.
 
 Datasets
 --------

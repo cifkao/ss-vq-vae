@@ -331,13 +331,19 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--logdir', type=str, required=True)
     actions = parser.add_subparsers(title='action')
-    train_parser = actions.add_parser('train')
+    train_parser = actions.add_parser('train', help='Train the model')
     train_parser.set_defaults(action='train')
-    run_parser = actions.add_parser('run')
+    run_parser = actions.add_parser('run', help='Run the trained model on a dataset')
     run_parser.set_defaults(action='run')
-    run_parser.add_argument('pairs_path', metavar='PAIRS_FILE')
-    run_parser.add_argument('output_list_path', metavar='OUT_LIST_FILE')
-    run_parser.add_argument('output_prefix', metavar='OUTPUT_PREFIX')
+    run_parser.add_argument('pairs_path', metavar='PAIRS_FILE',
+                            help='a file listing on each line a pair of audio files to use as '
+                                 'the content and style input, respectively; the paths need to '
+                                 'be relative to the directory containing %(metavar)s')
+    run_parser.add_argument('output_list_path', metavar='OUT_LIST_FILE',
+                            help='a file to write the list of output audio files to')
+    run_parser.add_argument('output_prefix', metavar='OUTPUT_PREFIX',
+                            help='a prefix (e.g. a directory path followed by a slash) for the '
+                                 'output audio files')
     run_parser.add_argument('--batch-size', type=int, metavar='SIZE')
     args = parser.parse_args()
 
