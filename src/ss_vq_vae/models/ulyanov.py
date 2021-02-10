@@ -1,6 +1,6 @@
 # Copyright 2020 InterDigital R&D and Télécom Paris.
 # Author: Ondřej Cífka
-# License: TBD
+# License: Apache 2.0
 
 """An implementation of the algorithm of Ulyanov and Lebedev.
 

@@ -1,6 +1,6 @@
 # Copyright 2020 InterDigital R&D and Télécom Paris.
 # Author: Ondřej Cífka
-# License: TBD
+# License: Apache 2.0
 
 """Self-supervised VQ-VAE for one-shot style transfer."""
 

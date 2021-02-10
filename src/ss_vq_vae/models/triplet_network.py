@@ -1,6 +1,6 @@
 # Copyright 2020 InterDigital R&D and Télécom Paris.
-# Author: Ondřej Cífka
-# License: TBD
+# Authors: Ondřej Cífka, Brian McFee, Jongpil Lee, Juhan Nam
+# License: Apache 2.0
 
 """Triplet network for metric learning.
 
