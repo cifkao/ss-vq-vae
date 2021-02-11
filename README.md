@@ -1,11 +1,15 @@
 Self-Supervised VQ-VAE for One-Shot Music Style Transfer
 ========================================================
 
-This is the code repository for the ICASSP 2021 submission
+This is the code repository for the ICASSP 2021 paper 
 *Self-Supervised VQ-VAE for One-Shot Music Style Transfer*
 by Ondřej Cífka, Alexey Ozerov, Umut Şimşekli, and Gaël Richard.
 
 Copyright 2020 InterDigital R&D and Télécom Paris.
+
+### Links
+[:musical_note: Supplementary website](https://adasp.telecom-paris.fr/s/ss-vq-vae) with audio examples  
+[:microphone: Demo notebook](https://colab.research.google.com/github/cifkao/ss-vq-vae/blob/main/experiments/colab_demo.ipynb)
 
 Contents
 --------
