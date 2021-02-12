@@ -13,11 +13,12 @@ defaults:
     values:
       layout: default
 
-baseurl: /ss-vq-vae/
+baseurl: /rc/demos_companion-pages/cifka-ss-vq-vae
 
 exclude:
   - node_modules
   - vendor
+  - Gemfile
   - Gemfile.lock
   - package.json
   - yarn.lock

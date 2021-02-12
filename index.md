@@ -14,30 +14,30 @@ description: 'Supplementary material'
 The following is a random sample of the synthetic test set with outputs of our model and the two baselines (musaicing and U+L).
 For U+L (Ulyanov and Lebedev), we include both the tuned version ($$\lambda_s=10^{-2.1}\lambda_c$$) and a version with a higher style weight ($$\lambda_s=10\lambda_c$$).
 
-{% include audio_table.html table_data=site.data.examples_synth base_url="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth" %}
+{% include audio_table.html table_data=site.data.examples_synth base_url="https://adasp.telecom-paris.fr/rc-ext/demos_companion-pages/vqvae_examples/synth" %}
 
 #### 'Good' outputs
 {: .no_toc}
 Here, we show a sample of the best outputs of our system (below the 5th percentile) according to the LSD metric.
 
-{% include audio_table.html table_data=site.data.examples_synth_good base_url="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth" %}
+{% include audio_table.html table_data=site.data.examples_synth_good base_url="https://adasp.telecom-paris.fr/rc-ext/demos_companion-pages/vqvae_examples/synth" %}
 
 #### 'Bad' outputs
 {: .no_toc}
 Similarly, here is a sample of the worst outputs (above the 95th percentile) according to the LSD metric.
 
-{% include audio_table.html table_data=site.data.examples_synth_bad base_url="https://perso.telecom-paris.fr/ocifka/vqvae_examples/synth" %}
+{% include audio_table.html table_data=site.data.examples_synth_bad base_url="https://adasp.telecom-paris.fr/rc-ext/demos_companion-pages/vqvae_examples/synth" %}
 
 ### Real inputs
 The following are outputs on the 'Mixing Secrets' test set, first some cherry-picked ones and then a random sample.
 
 #### Selection
 {: .no_toc}
-{% include audio_table.html table_data=site.data.examples_real_selected base_url="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real" %}
+{% include audio_table.html table_data=site.data.examples_real_selected base_url="https://adasp.telecom-paris.fr/rc-ext/demos_companion-pages/vqvae_examples/real" %}
 
 #### Random sample
 {: .no_toc}
-{% include audio_table.html table_data=site.data.examples_real base_url="https://perso.telecom-paris.fr/ocifka/vqvae_examples/real" %}
+{% include audio_table.html table_data=site.data.examples_real base_url="https://adasp.telecom-paris.fr/rc-ext/demos_companion-pages/vqvae_examples/real" %}
 
 ## Additional information
 This section contains details omitted from the paper for brevity.
