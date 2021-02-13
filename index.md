@@ -1,5 +1,6 @@
 ---
 title: Self-Supervised VQ-VAE for One-Shot Music Style Transfer
+image: /assets/img/ss-vq-vae-open-graph.png
 custom_header: |
   <h1 class="project-name">Self-Supervised VQ-VAE for One-Shot Music Style Transfer</h1>
   <div class="buttons">
