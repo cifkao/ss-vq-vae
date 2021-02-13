@@ -63,7 +63,7 @@ table.audio-table {
 
   audio {
     height: 2.5rem;
-    max-width: 10rem;
+    max-width: 11rem;
 
     @include large {
       display: block;
@@ -90,6 +90,10 @@ table.audio-table {
     display: block;
     max-height: 90vh;
     overflow-y: auto;
+
+    th {
+      white-space: nowrap;
+    }
   }
 
 }
