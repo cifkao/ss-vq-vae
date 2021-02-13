@@ -3,6 +3,12 @@ theme: jekyll-theme-cayman
 github:
   is_project_page: false
 
+author:
+  twitter: cifkao
+
+twitter:
+  card: summary
+
 markdown: kramdown
 kramdown:
   math_engine: katex
