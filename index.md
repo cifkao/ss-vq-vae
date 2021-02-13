@@ -5,7 +5,7 @@ custom_header: |
   <h1 class="project-name">Self-Supervised VQ-VAE for One-Shot Music Style Transfer</h1>
   <div class="buttons">
     <a href="https://arxiv.org/abs/2102.05749" class="btn" role="button">
-      <i class="fa fa-file-pdf-o"></i>
+      <i class="fa fa-file-text-o"></i>
       Paper
     </a>
     <a href="https://github.com/cifkao/ss-vq-vae" class="btn" role="button">
