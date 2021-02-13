@@ -1,7 +1,40 @@
 ---
 title: Self-Supervised VQ-VAE for One-Shot Music Style Transfer
-description: 'Supplementary material'
+custom_header: |
+  <h1 class="project-name">Self-Supervised VQ-VAE for One-Shot Music Style Transfer</h1>
+  <div class="buttons">
+    <a href="https://arxiv.org/abs/2102.05749" class="btn" role="button">
+      <i class="fa fa-file-pdf-o"></i>
+      Paper
+    </a>
+    <a href="https://github.com/cifkao/ss-vq-vae" class="btn" role="button">
+      <i class="fa fa-code"></i>
+      Code
+    </a>
+    <a href="#examples" class="btn" role="button">
+      <i class="fa fa-play-circle"></i>
+      Examples
+    </a>
+  </div>
 ---
+
+## Paper
+{: .no_toc}
+
+<blockquote>
+  <p>
+    <a href="https://scholar.google.cz/citations?user=Uz7XFWoAAAAJ" target="_blank">Ondřej Cífka</a>, <a href="https://scholar.google.com/citations?user=LnV-0z0AAAAJ" target="_blank">Alexey Ozerov</a>, <a href="https://scholar.google.com.tr/citations?user=CuArAkgAAAAJ" target="_blank">Umut Şimşekli</a> and <a href="https://scholar.google.fr/citations?user=xn70tPIAAAAJ" target="_blank">Gaël Richard</a>. <a href="https://arxiv.org/abs/2102.05749">"Self-Supervised VQ-VAE for One-Shot Music Style Transfer."</a> Accepted to the <em>2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, 2021.
+  </p>
+</blockquote>
+
+<div class="badges">
+<div data-badge-popover="bottom" data-badge-type="1" data-arxiv-id="2102.05749" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<a href="https://github.com/cifkao/ss-vq-vae"><img alt="GitHub repo stars" src="https://img.shields.io/github/stars/cifkao/ss-vq-vae?style=social"></a>
+</div>
+
+### Abstract
+{: .no_toc}
+Neural style transfer, allowing to apply the artistic style of one image to another, has become one of the most widely showcased computer vision applications shortly after its introduction. In contrast, related tasks in the music audio domain remained, until recently, largely untackled. While several style conversion methods tailored to musical signals have been proposed, most lack the 'one-shot' capability of classical image style transfer algorithms. On the other hand, the results of existing one-shot audio style transfer methods on musical inputs are not as compelling. In this work, we are specifically interested in the problem of **one-shot timbre transfer**. We present a novel method for this task, based on an extension of the **vector-quantized variational autoencoder** (VQ-VAE), along with a simple **self-supervised learning** strategy designed to obtain disentangled representations of timbre and pitch. We evaluate the method using a set of objective metrics and show that it is able to outperform selected baselines.
 
 ## Contents
 {: .no_toc}
@@ -64,3 +97,5 @@ The metric uses a sequence of MFCC vectors (only coefficients 2–13) as input a
 The training dataset consists of 7381 triplets (anchor, positive, negative) extracted from the [Mixing Secrets](https://www.cambridge-mt.com/ms/mtk/)
 data so that the anchor and the positive example are from the same file and the negative example is from a different file.
 The aim is to make the metric good at discriminating between different instruments, but largely pitch-independent.
+
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>

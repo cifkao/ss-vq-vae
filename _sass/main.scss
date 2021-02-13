@@ -1,7 +1,59 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .main-content {
   /* Prevent overflow on mobile, see https://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers */
   position: relative;
   overflow-x: hidden;
+
+  @include large {
+    padding-top: 3rem;
+  }
+}
+
+header {
+  .buttons {
+    margin-top: 2rem;
+
+    @include large {
+      margin-top: 3rem;
+    }
+
+    .btn {
+      color: white;
+      border-color: white;
+      background: transparent;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+
+      &:hover {
+        color: black;
+        text-decoration: none;
+        background-color: white;
+        border-color: white;
+      }
+
+      font-size: 1.2rem;
+
+      i.fa {
+        margin-right: 0.2em;
+      }
+
+      @include large {
+        padding: 1rem 1.2rem;
+        font-size: 1.5rem;
+      }
+
+      @include medium {
+        padding: 0.7rem 1rem;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+.badges > * {
+  display: inline-block;
 }
 
 table.audio-table {
