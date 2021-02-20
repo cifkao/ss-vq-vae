@@ -9,7 +9,8 @@ Copyright 2020 InterDigital R&D and Télécom Paris.
 
 ### Links
 [:musical_note: Supplementary website](https://adasp.telecom-paris.fr/s/ss-vq-vae) with audio examples  
-[:microphone: Demo notebook](https://colab.research.google.com/github/cifkao/ss-vq-vae/blob/main/experiments/colab_demo.ipynb)
+[:microphone: Demo notebook](https://colab.research.google.com/github/cifkao/ss-vq-vae/blob/main/experiments/colab_demo.ipynb)  
+[:brain: Trained model parameters](https://adasp.telecom-paris.fr/rc-ext/demos_companion-pages/vqvae_examples/ssvqvae_model_state.pt)
 
 Contents
 --------
