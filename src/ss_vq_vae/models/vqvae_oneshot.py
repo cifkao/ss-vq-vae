@@ -352,7 +352,7 @@ def main():
 
     cfg_path = os.path.join(args.logdir, 'config.yaml')
     cfg = confugue.Configuration.from_yaml_file(cfg_path)
-    exp = cfg.configure(Experiment, config_path=cfg_path, logdir=args.logdir)
+    exp = cfg.configure(Experiment, config_path=cfg_path, logdir=args.logdir, device='cpu')
     if args.action == 'train':
         exp.train()
     elif args.action == 'run':

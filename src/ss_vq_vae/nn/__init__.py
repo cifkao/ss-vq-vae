@@ -4,3 +4,5 @@
 
 from .nn import RNNWrapper, ResidualWrapper
 from .vq import VQEmbedding
+from .ef_embed import EfficientNetEmbedding, EfficientNetType
+from .bilinear_similarity import BilinearSimilarity
