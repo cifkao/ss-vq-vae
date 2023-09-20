@@ -11,14 +11,14 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         'bidict',
-        'confugue>=0.1,<1',
-        'librosa>=0.8,<1',
+        'confugue',
+        'librosa',
         'matplotlib',
         'numpy',
         'scikit_learn',
         'SoundFile',
-        'tensorflow>=2,<3',
-        'torch>=1.5,<2',
+        'tensorflow',
+        'torch',
     ],
     python_requires='>=3.6',
 )
